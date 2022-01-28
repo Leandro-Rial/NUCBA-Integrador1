@@ -1,0 +1,149 @@
+.products--wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1366px;
+    margin: 40px 20px;
+}
+
+.products--title {
+    font: normal bold 28px/30px "Roboto";
+    letter-spacing: 1px;
+    color: #f6f6f7;
+}
+
+.products--games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products--games__card {
+    position: relative;
+    width: 306px;
+    height: 420px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.games__card__main {
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+}
+
+.games__card__main__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.games__card__footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    max-width: 306px;
+    width: 275px;
+    max-height: 68px;
+    padding: 8px 16px 12px 16px;
+    background-color: #151b29;
+}
+
+.games__card__footer__title {
+    font: normal bold 18px/24px "Roboto";
+    color: #fff;
+    margin: 0;
+}
+
+.products--games__sidebar__wrapper {
+    position: relative;
+    gap: 20px;
+}
+
+.products--games__sidebar__card {
+    position: relative;
+    width: 306px;
+    height: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.card-up {
+    margin-bottom: 18px;
+}
+
+.games__card__footer__price {
+    text-align: center;
+    font: normal bold 16px/24px "Roboto";
+    color: #fff;
+    width: 60px;
+    border: 2px solid #0f53cc;
+    padding: 10px;
+}
+
+.games__card__sidebar__main {
+    width: 100%;
+    height: 100%;
+    max-height: 142px;
+}
+
+.sidebar-img-one {
+    background-image: url(../images/gameThree.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar-img-two {
+    background-image: url(../images/gameFour.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.games__card__sidebar__footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    max-width: 306px;
+    width: 275px;
+    max-height: 68px;
+    padding: 8px 16px 12px 16px;
+    background-color: #151b29;
+}
+
+@media screen and (max-width: 671px) {
+    .products--games__sidebar__card {
+        position: relative;
+        width: 306px;
+        height: 420px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+    
+    .games__card__sidebar__main {
+        width: 100%;
+        height: 100%;
+        max-height: 350px;
+    }
+
+    .sidebar-img-one {
+        background-image: url(../images/rdr2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-img-two {
+        background-image: url(../images/they_are_billions-4899931.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

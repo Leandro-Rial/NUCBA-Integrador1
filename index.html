@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/fca13a1c83.js" crossorigin="anonymous"></script>
+    <title>DigitalStore</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar--wrapper">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="navbar--check">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="navbar--links__left">
+                <li class="left__links">
+                    <a href="#home" class="left__a__links left__a__links__active">Home</a>
+                    <a href="#products" class="left__a__links">Products</a>
+                    <a href="#aboutUs" class="left__a__links">About Us</a>
+                    <a href="#howItWork" class="left__a__links">How it work</a>
+                    <a href="#contact" class="left__a__links">Contact</a>
+                </li>
+            </ul>
+
+            <div class="navbar--logo__wrapper">
+                <a href="#home" class="navbar--logo__link">
+                    <p class="navbar--logo">DigitalStore</p>
+                </a>
+            </div>
+
+            <div class="navbar--btns__right">
+                <button class="navbar--btns__login">
+                    <a href="/login.html" class="navbar--btns__login__a">
+                        Login
+                    </a>
+                </button>
+                <button class="navbar--btns__signup">
+                    <a href="/signup.html" class="navbar--btns__login__a">
+                        SignUp
+                    </a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner--wrapper" id="content-slider">
+        <div class="slider-wrap"> 
+    
+        <!-- ===== Thumbnail ControlNav ======= -->         
+        <input type="radio" id="input-1" name="i" >         
+        <input type="radio" id="input-2" name="i" >         
+        <input type="radio" id="input-3" name="i" >
+    
+        <nav class="slider-dot-control">
+            <label for="input-1" class="slider-dot"></label>
+            <label for="input-2" class="slider-dot"></label>
+            <label for="input-3" class="slider-dot"></label>
+        </nav>
+    
+        <!-- =================================== -->    
+        <nav class="slider-arrow-control">
+            <label for="input-1"></label>
+            <label for="input-2"></label>
+            <label for="input-3"></label>
+        </nav>
+        <!-- =================================== -->
+    
+        <!-- ===== IMages ======= -->                           
+    
+        <div class="slider">
+            <div class="slider-inner">
+    
+            <figure>
+                <figcaption class="slider-head">
+                    <h3 class="banner--h3 font1">The Witcher Wild Hunt</h3>
+                    <button class="banner--button font1">Buy</button>
+                </figcaption>
+                <img src="./images/slider-img-one.jpg" alt="" id="i-1" class="slider-img">
+            </figure>
+    
+            <figure>
+                <figcaption class="slider-head">
+                    <h3 class="banner--h3 font2">FIFA 22</h3>
+                    <button class="banner--button font2">Buy</button>
+                </figcaption>
+                <img src="./images/slider-img-two.jpg" alt="" id="i-2" class="slider-img">
+            </figure>
+    
+            <figure>
+                <figcaption class="slider-head">
+                    <h3 class="banner--h3 font3">The Forest</h3>
+                    <button class="banner--button font3">Buy</button>
+                </figcaption>
+                <img src="./images/slider-img-three.jpg" alt="" id="i-3" class="slider-img">
+            </figure>
+            </div>
+        </div>                  
+    
+        </div>        
+    </div>
+
+    <div class="main--page">
+
+        <!-- PRODUCTS -->
+        <section class="products--wrapper" id="products">
+            <h3 class="products--title">Check out some of our games</h3>
+            <div class="products--games">
+                <div class="products--games__card">
+                    <main class="games__card__main">
+                        <img src="./images/gameOne.jpg" alt="" class="games__card__main__img">
+                    </main>
+                    <footer class="games__card__footer">
+                        <p class="games__card__footer__title">Green Hell</p>
+                        <span class="games__card__footer__price">$ 2</span>
+                    </footer>
+                </div>
+                <div class="products--games__card">
+                    <main class="games__card__main">
+                        <img src="./images/God_of_War.png" alt="" class="games__card__main__img">
+                    </main>
+                    <footer class="games__card__footer">
+                        <p class="games__card__footer__title">God of war</p>
+                        <span class="games__card__footer__price">$ 2.5</span>
+                    </footer>
+                </div>
+                <div class="products--games__card">
+                    <main class="games__card__main">
+                        <img src="./images/gameTwo.jpg" alt="" class="games__card__main__img">
+                    </main>
+                    <footer class="games__card__footer">
+                        <p class="games__card__footer__title">Tom Clancy's Ghost Recon® Wildlands</p>
+                        <span class="games__card__footer__price">$ 1.5</span>
+                    </footer>
+                </div>
+                <div class="products--games__sidebar__wrapper">
+                    <div class="products--games__sidebar__card card-up">
+                        <main class="games__card__sidebar__main sidebar-img-one">
+                        </main>
+                        <footer class="games__card__sidebar__footer">
+                            <p class="games__card__footer__title">Red Dead Redemption 2</p>
+                            <span class="games__card__footer__price">$ 2</span>
+                        </footer>
+                    </div>
+                    <div class="products--games__sidebar__card">
+                        <main class="games__card__sidebar__main  sidebar-img-two">
+                        </main>
+                        <footer class="games__card__sidebar__footer">
+                            <p class="games__card__footer__title">They Are Billions</p>
+                            <span class="games__card__footer__price">$ 2</span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="about-us--wrapper" id="aboutUs">
+            <h3 class="about-us--title">Know about us</h3>
+            <div class="about-us--content__p">
+                <p class="about-us__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, dolorum harum, temporibus placeat reiciendis blanditiis quaerat dicta quasi quam molestiae beatae numquam nostrum commodi natus architecto, quos hic ipsa? Atque voluptatibus, assumenda aperiam unde dolore aliquid, reprehenderit, inventore illo animi tempora quaerat exercitationem quae veritatis maiores. Est, enim dolores incidunt obcaecati ullam ratione laborum minus cum dolore necessitatibus commodi expedita.</p>
+                <p class="about-us__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, dolorum harum, temporibus placeat reiciendis blanditiis quaerat dicta quasi quam molestiae beatae numquam nostrum commodi natus architecto, quos hic ipsa? Atque voluptatibus, assumenda aperiam unde dolore aliquid, reprehenderit, inventore illo animi tempora quaerat exercitationem quae veritatis maiores. Est, enim dolores incidunt obcaecati ullam ratione laborum minus cum dolore necessitatibus commodi expedita.</p>
+            </div>
+        </section>
+
+        <!-- HOW IT WORK -->
+        <div class="how-it-work--wrapper" id="howItWork">
+            <h3 class="h-i-w--title">How it work</h3>
+            <div class="h-i-w--cards__wrapper">
+                <div class="h-i-w--card">
+                    <header class="h-i-w--card__header">
+                        <p class="h-i-w--card__header__step">1</p>
+                    </header>
+                    <main class="h-i-w--card__main">
+                        <h4 class="h-i-w--card__main__title">View</h4>
+                    </main>
+                </div>
+                <div class="h-i-w--card">
+                    <header class="h-i-w--card__header">
+                        <p class="h-i-w--card__header__step">2</p>
+                    </header>
+                    <main class="h-i-w--card__main">
+                        <h4 class="h-i-w--card__main__title">Buy</h4>
+                    </main>
+                </div>
+                <div class="h-i-w--card">
+                    <header class="h-i-w--card__header">
+                        <p class="h-i-w--card__header__step">3</p>
+                    </header>
+                    <main class="h-i-w--card__main">
+                        <h4 class="h-i-w--card__main__title">Play</h4>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact--wrapper" id="contact">
+        <div class="first-container">
+            <div class="info-container-contact">
+                <h3 class="info-container-contact__h3">Address</h3>
+                <p class="info-container-contact__p">Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
+            </div>
+            <div class="info-container-contact">
+                <h3 class="info-container-contact__h3">Lets Talk</h3>
+                <p class="info-container-contact__p">+1 800 1236879</p>
+            </div>
+            <div class="info-container-contact">
+                <h3 class="info-container-contact__h3">General Support</h3>
+                <p class="info-container-contact__p">contact@example.com</p>
+            </div>
+        </div>
+        <div class="second-container">
+            <form class="form-contact">
+                <div class="form-group">
+                    <input id="email-input" type="text" placeholder="example@email.com" class="input-contact" required>
+                </div>
+                <button class="btn-contact">Send message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer--wrapper">
+        <div class="footer--copy">
+            &copy; 2022 All rights reserved
+        </div>
+        <div class="footer--logo">
+            <a href="#home" class="navbar--logo__link">
+                <p class="navbar--logo">DS</p>
+            </a>
+        </div>
+        <div class="footer--social-media">
+            <a href="#" class="footer--social-media__a">
+                <i class="fab fa-facebook-f facebook-bg"></i>
+            </a>
+            <a href="#" class="footer--social-media__a">
+                <i class="fab fa-twitter twitter-bg"></i>
+            </a>
+            <a href="#" class="footer--social-media__a">
+                <i class="fab fa-google-plus-g google-bg"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,293 @@
+
+/* NAVBAR */
+
+.navbar--wrapper {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #151b29;
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+    z-index: 16;
+  }
+  
+  .navbar {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  /* links */
+  
+  .navbar--links__left {
+    display: flex;
+    list-style: none;
+  }
+  
+  .left__links {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  .left__a__links {
+    font: normal normal 16px/24px "Roboto";
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .left__a__links.left__a__links__active,
+  .left__a__links:hover {
+    color: #19afdf;
+    transition: 0.4s;
+  }
+  
+  /* LOGO */
+  
+  .navbar--logo__wrapper {
+    text-align: center;
+  }
+  .navbar--logo__link {
+    width: 100%;
+    font: normal 600 25px/24px "Montserrat";
+    text-decoration: none;
+    color: #19afdf;
+  }
+  .navbar--logo {
+    letter-spacing: 1.5px;
+    filter: drop-shadow(5px 5px 10px #3466ee);
+  }
+  
+  /* LOGIN BTNS */
+  
+  .navbar--btns__right {
+    text-align: right;
+    padding-right: 40px;
+    margin-right: 1em;
+  }
+  .navbar--btns__login {
+    width: 150px;
+    border: 2px solid #19afdf;
+    padding: 10px;
+    background-color: transparent;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .navbar--btns__signup {
+    width: 150px;
+    border: 2px solid #19afdf;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .navbar--btns__login:hover,
+  .navbar--btns__signup:hover {
+    transition: 0.5s;
+    background-color: #19afdf;
+    filter: drop-shadow(5px 5px 10px #3466ee);
+  }
+  .navbar--btns__login__a {
+    color: #fff;
+    font: normal normal 14px/24px "Montserrat";
+    text-decoration: none;
+    letter-spacing: 1.5px;
+  }
+  
+  /* BURGER */
+  
+  .navbar--check {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1272px) {
+    /* NAVBAR */
+  
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row-reverse;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* links */
+  
+    .navbar--links__left {
+      position: fixed;
+      width: 100%;
+      height: calc(100vh - 120px);
+      background-color: #101520;
+      top: 120px;
+      left: -100%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5s;
+    }
+  
+    .left__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 40px 0 250px 0;
+    }
+  
+    .left__a__links {
+      font: normal normal 24px/30px "Roboto";
+      text-transform: uppercase;
+    }
+  
+    /* LOGIN BTNS */
+  
+    .navbar--btns__right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      height: 150px;
+      background-color: #101520;
+      left: -100%;
+      bottom: -650px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5s
+    }
+    .navbar--btns__login {
+      width: 50%;
+      margin: 0;
+    }
+    .navbar--btns__signup {
+      width: 50%;
+    }
+  
+    /* BURGER */
+  
+    .navbar--check {
+      display: block;
+      margin-right: 0px;
+      cursor: pointer;
+    }
+  
+    #check:checked  ~ .navbar--links__left, #check:checked  ~ .navbar--btns__right {
+      left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (max-height: 695px) and (min-height: 600px) {
+    /* LOGIN BTNS */
+  
+    .navbar--btns__right {
+      height: 130px;
+      bottom: -450px;
+    }
+  }
+  
+  @media screen and (max-width: 912px) {
+    .left__links {
+      padding: 40px 0 300px 0;
+    }
+  
+    .navbar--btns__right {
+      height: 165px;
+      bottom: -1180px;
+    }
+  }
+  
+  @media screen and (max-width: 820px) {
+    .left__links {
+      padding: 40px 0 360px 0;
+    }
+  
+    .navbar--btns__right {
+      height: 165px;
+      bottom: -980px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar--btns__right {
+      height: 165px;
+      bottom: -840px;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .left__links {
+      padding: 40px 0 245px 0;
+    }
+  
+    .navbar--btns__right {
+      height: 135px;
+      bottom: -545px;
+    }
+  }
+  
+  @media screen and (max-width: 414px) {
+    .left__links {
+      padding: 40px 0 300px 0;
+    }
+  
+    .navbar--btns__right {
+      height: 135px;
+      bottom: -720px;
+    }
+  }
+  
+  @media screen and (max-width: 393px) {
+    .navbar--btns__right {
+      height: 135px;
+      bottom: -660px;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+  
+    .left__links {
+      padding: 40px 0 250px 0;
+    }
+  
+    /* LOGIN BTNS */
+  
+    .navbar--btns__right {
+      height: 150px;
+      bottom: -500px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .navbar--btns__right {
+      height: 150px;
+      bottom: -570px;
+    }
+  }
+  
+  @media screen and (max-width: 1272px) and (height: 695px) {
+    .left__links {
+      padding: 40px 0 245px 0;
+    }
+  
+    .navbar--btns__right {
+      height: 135px;
+      bottom: -545px;
+    }
+  }
